@@ -9,8 +9,19 @@
 body {
     background-color: #FFF;
     font-family: Whitney-Medium, sans-serif;
+    color: #000;
     font-size: 20px;
     line-height: 30px;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 70px;
+}
+
+h2 {
+    font-size: 1.5em;
+    line-height: 70px;
 }
 
 .clearfix::after {
@@ -23,7 +34,7 @@ body {
 
 /* Logo, menù, login */
 #top {
-    background-color: #3161E0;
+    background-color: #255EE9;
     text-align: center;
     font-size: 16px;
 }
@@ -68,7 +79,7 @@ body {
 }
 
 #top .accedi {
-    display: inline-block;
+    display: block;
     float: right;
     padding: 5px 20px;
     background-color: #FFF;
@@ -79,7 +90,7 @@ body {
 }
 
 #top .accedi:hover {
-    color: #3161E0;
+    color: #255EE9;
 }
 
 /* Presentazione e download */
@@ -101,17 +112,12 @@ body {
     margin-bottom: 50px;
 }
 
-#intro h1 {
-    font-size: 3em;
-}
-
 #intro .discord-download, #intro .discord-browser {
     display: inline-block;
     padding: 15px 35px;
     border-radius: 50px;
     text-decoration: none;
     margin: 0 10px;
-    
 }
 
 #intro .discord-download {
@@ -121,5 +127,71 @@ body {
 
 #intro .discord-browser {
     background-color: #23272A;
+    color: #FFF;
+}
+
+/* MAIN */
+main {
+    margin: auto;
+}
+
+main .container {
+    width: 75%;
+    margin: auto;
+    padding: 200px 0;
+}
+
+main section:nth-child(odd) {
+    background-color: #FFF;
+}
+
+main section:nth-child(even) {
+    background-color: #F6F6F6;
+}
+
+main h1 {
+    margin-bottom: 25px;
+}
+
+/* Prima sezione */
+img[src="assets/images/item1.svg"] {
+    float: left;
+    margin-right: 100px;
+}
+
+/* Seconda sezione */
+img[src="assets/images/item2.svg"] {
+    float: right;
+    margin-left: 100px;
+}
+
+/* Terza sezione*/
+img[src="assets/images/item3.svg"] {
+    float: left;
+    margin-right: 100px;
+}
+
+/* Quarta sezione */
+main section:nth-child(4) {
+    text-align: center;
+}
+
+img[src="assets/images/item4-big.svg"] {
+    width: 1000px;
+}
+
+.pronto {
+    background-image: url(../images/stars.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+main .discord-download {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin: 0 10px;
+    background-color: #8EA1E1;
     color: #FFF;
 }
