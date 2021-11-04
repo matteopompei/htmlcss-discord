@@ -1,3 +1,5 @@
+/* DICHIARAZIONI GENERALI */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +9,8 @@
 body {
     background-color: #FFF;
     font-family: Whitney-Medium, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 .clearfix::after {
@@ -16,17 +19,19 @@ body {
     clear: both;
 }
 
+/* HEADER */
+
+/* Logo, menù, login */
 #top {
     background-color: #3161E0;
     text-align: center;
+    font-size: 16px;
 }
 
 #top > .container {
     width: 80%;
-    padding: 35px;
+    padding: 30px;
     margin: auto;
-    position: relative;
-    align-items: center;
 }
 
 #top .logo, #top nav, #top .accedi {
@@ -65,7 +70,7 @@ body {
 #top .accedi {
     display: inline-block;
     float: right;
-    padding: 10px 20px;
+    padding: 5px 20px;
     background-color: #FFF;
     border-radius: 30px;
     text-decoration: none;
@@ -75,4 +80,46 @@ body {
 
 #top .accedi:hover {
     color: #3161E0;
+}
+
+/* Presentazione e download */
+#intro {
+    background-image: url(../images/jumbo.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #FFF;
+}
+
+#intro .container {
+    width: 50%;
+    margin: auto;
+    padding: 100px 0;
+}
+
+#intro h1, #intro p {
+    margin-bottom: 50px;
+}
+
+#intro h1 {
+    font-size: 3em;
+}
+
+#intro .discord-download, #intro .discord-browser {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin: 0 10px;
+    
+}
+
+#intro .discord-download {
+    background-color: #FFF;
+    color: #000;
+}
+
+#intro .discord-browser {
+    background-color: #23272A;
+    color: #FFF;
 }
