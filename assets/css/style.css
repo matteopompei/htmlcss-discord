@@ -95,6 +95,7 @@ h2 {
 
 /* Presentazione e download */
 #intro {
+    background-color: #255EE9;
     background-image: url(../images/jumbo.png);
     background-size: cover;
     background-position: center;
@@ -136,9 +137,14 @@ main {
 }
 
 main .container {
-    width: 75%;
+    width: 80%;
     margin: auto;
     padding: 200px 0;
+    display: flex;
+}
+
+main section:last-child .container {
+    display: block;
 }
 
 main section:nth-child(odd) {
@@ -153,23 +159,39 @@ main h1 {
     margin-bottom: 25px;
 }
 
-/* Prima sezione */
+main img {
+    margin: 0 100px;
+}
+
+/*
+
+TUTTO QUESTO - E MOLTO ALTRO - NON SERVE PIÙ PERCHÉ
+HO IMPARATO COME FUNZIONA IL FLEXBOX, GRAZIE GOOGLE
+
+«For a long time, the only reliable cross-browser compatible tools available
+for creating CSS layouts were features like floats and positioning.
+These work, but in some ways they're also LIMITING and FRUSTRATING.»
+- da developer.mozilla.org
+
+SIMONE DOVEVI INSEGNARCELO PRIMA DI QUESTO ESERCIZIO
+OGGI HO ANNIENTATO LA MIA SANITÀ MENTALE
+
+Prima sezione
 img[src="assets/images/item1.svg"] {
     float: left;
-    margin-right: 100px;
 }
 
-/* Seconda sezione */
+Seconda sezione
 img[src="assets/images/item2.svg"] {
     float: right;
-    margin-left: 100px;
 }
 
-/* Terza sezione*/
+Terza sezione
 img[src="assets/images/item3.svg"] {
     float: left;
-    margin-right: 100px;
 }
+
+*/
 
 /* Quarta sezione */
 main section:nth-child(4) {
@@ -184,6 +206,10 @@ img[src="assets/images/item4-big.svg"] {
     background-image: url(../images/stars.svg);
     background-position: top;
     background-repeat: no-repeat;
+}
+
+.pronto h2 {
+    margin-bottom: 30px;
 }
 
 main .discord-download {
