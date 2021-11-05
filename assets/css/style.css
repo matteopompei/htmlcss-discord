@@ -135,6 +135,7 @@ main {
 
 main .container {
     width: 80%;
+    max-width: 1500px;
     margin: auto;
     padding: 200px 0;
     display: flex;
