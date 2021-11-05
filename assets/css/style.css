@@ -81,11 +81,13 @@ h2 {
     text-decoration: none;
     color: #000;
     font-weight: normal;
-
+    transition: 0.3s;
 }
 
 #top .accedi:hover {
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.4);
     color: #255EE9;
+
 }
 
 /* Presentazione e download */
@@ -116,6 +118,7 @@ h2 {
     border-radius: 50px;
     text-decoration: none;
     margin: 0 10px;
+    transition: 0.3s;
 }
 
 #intro .discord-download {
@@ -123,10 +126,22 @@ h2 {
     color: #000;
 }
 
+#intro .discord-download:hover {
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.4);
+    color: #255EE9;
+}
+
 #intro .discord-browser {
     background-color: #23272A;
     color: #FFF;
 }
+
+#intro .discord-browser:hover {
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.4);
+    background-color: #36393F;
+}
+
+/* #36393F */
 
 /* MAIN */
 main {
@@ -217,9 +232,17 @@ main .discord-download {
     border-radius: 50px;
     text-decoration: none;
     margin: 0 10px;
-    background-color: #8EA1E1;
+    background-color: #7289DA;
     color: #FFF;
+    transition: 0.3s;
 }
+
+main .discord-download:hover {
+    background-color: #7289DA;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.4);
+}
+
+
 
 /* FOOTER */
 footer {
@@ -312,9 +335,15 @@ footer ul {
     background-color: #8EA1E1;
     border-radius: 30px;
     text-decoration: none;
-    color: #000;
+    color: #FFF;
     font-weight: normal;
     height: 35px;
+    transition: 0.3s;
+}
+
+#bottom .registrati:hover {
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.4);
+    background-color: #7289DA;
 }
 
 
