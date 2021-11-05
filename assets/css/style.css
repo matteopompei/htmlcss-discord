@@ -24,12 +24,6 @@ h2 {
     line-height: 70px;
 }
 
-.clearfix::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
 /* HEADER */
 
 /* Logo, menù, login */
@@ -41,8 +35,11 @@ h2 {
 
 #top > .container {
     width: 80%;
+    min-width: 1000px;
+    max-width: 1300px;
     padding: 30px;
     margin: auto;
+    display: flex;
 }
 
 #top .logo, #top nav, #top .accedi {
@@ -50,7 +47,6 @@ h2 {
 }
 
 #top .logo {
-    float: left;
     height: 35px;
 }
 
@@ -71,7 +67,6 @@ h2 {
     color: #FFF;
     font-weight: bold;
     text-decoration: none;
-    line-height: 35px;
 }
 
 #top nav > ul > li > a:hover {
@@ -80,13 +75,13 @@ h2 {
 
 #top .accedi {
     display: block;
-    float: right;
-    padding: 5px 20px;
+    padding: 10px 20px;
     background-color: #FFF;
     border-radius: 30px;
     text-decoration: none;
     color: #000;
     font-weight: normal;
+
 }
 
 #top .accedi:hover {
@@ -105,6 +100,8 @@ h2 {
 
 #intro .container {
     width: 50%;
+    min-width: 700px;
+    max-width: 1000px;
     margin: auto;
     padding: 100px 0;
 }
@@ -159,9 +156,6 @@ main h1 {
     margin-bottom: 25px;
 }
 
-main img {
-    margin: 0 100px;
-}
 
 /*
 
@@ -220,4 +214,101 @@ main .discord-download {
     margin: 0 10px;
     background-color: #8EA1E1;
     color: #FFF;
+}
+
+/* FOOTER */
+footer {
+    background-color: #23272A;
+    color: #FFF;
+    font-size: 0.8em;
+}
+
+footer .container {
+    width: 80%;
+    padding-top: 100px;
+    display: flex;
+    gap: 1%;
+}
+
+footer div {
+    margin: auto;
+}
+
+footer > div > div {
+    height: 250px;
+}
+
+footer h5, footer h6 {
+    color: #7289DA;
+    font-weight: bold;
+}
+
+footer h5 {
+    font-size: 2em;
+    line-height: 2em;
+}
+
+footer h6 {
+    font-size: 1.1em;
+}
+
+footer a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Prima colonna */
+footer .lingue {
+    font-size: 0.7em;
+    margin-bottom: 15px;
+}
+
+footer .lingue img {
+    width: 25px;
+    vertical-align: middle;
+}
+
+footer .social i {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+/* Altre colonne */
+footer ul {
+    list-style: none;
+}
+
+/* Secondoa parte del footer */
+#bottom {
+
+}
+
+#bottom .container {
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    display: flex;
+    gap: 50%;
+    justify-content: space-around;
+    border-top: 1px solid #8EA1E1;
+}
+
+#bottom img {
+    height: 35px;
+}
+
+#bottom .registrati {
+    display: block;
+    padding: 3px 20px;
+    background-color: #8EA1E1;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #000;
+    font-weight: normal;
+    height: 35px;
 }
