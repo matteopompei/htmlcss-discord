@@ -144,12 +144,16 @@ main section:last-child .container {
     display: block;
 }
 
-main section:nth-child(odd) {
+main section:nth-child(1), main section:nth-child(5) {
     background-color: #FFF;
 }
 
-main section:nth-child(even) {
+main section:nth-child(3), main section:nth-child(7) {
     background-color: #F6F6F6;
+}
+
+main section:nth-child(7) {
+    text-align: center;
 }
 
 main h1 {
@@ -285,11 +289,6 @@ footer ul {
     list-style: none;
 }
 
-/* Secondoa parte del footer */
-#bottom {
-
-}
-
 #bottom .container {
     width: 80%;
     min-width: 1000px;
@@ -315,4 +314,18 @@ footer ul {
     color: #000;
     font-weight: normal;
     height: 35px;
+}
+
+
+/* BONUS ONDE */
+.separatore-colorato {
+    background-image: url(../images/wave-colorata.svg);
+    background-color: #FFF;
+    height: 150px;
+}
+
+.separatore-bianco {
+    background-image: url(../images/wave-bianca.svg);
+    background-color: #F6F6F6;
+    height: 150px;
 }
